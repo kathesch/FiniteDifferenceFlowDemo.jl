@@ -151,6 +151,6 @@ begin
 end
 
 #replace 1:t with arbitrary range to watch it loop
-record(fig, "flow.mp4", 1:t) do i
-    T[] = mod1(i,size(a,1))
+record(fig, "flow.mp4", 1:1000) do i
+    T[] = mod1(i,size(pressure_array,1))
 end
